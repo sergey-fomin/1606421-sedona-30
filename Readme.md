@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Сергей Фомин](https://up.htmlacademy.ru/htmlcss/30/user/1606421).
-* Наставник: [Евгений Петров](https://up.htmlacademy.ru/htmlcss/30/user/1606421).
+* Наставник: [Евгений Петров](https://htmlacademy.ru/profile/id617077).
 
 ---
 
