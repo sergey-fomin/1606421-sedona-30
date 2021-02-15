@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта штата</a></li>
+                <li><a>Гостиницы</a></li>
+            </ul>
+        </nav>
+        <a href="index.html"><img src="https://via.placeholder.com/138x70" alt="Логотип сайта города Седоны" width="138"
+                height="70"></a>
+    </header>
+
+    <main>
+        <h1>Гостиницы</h1>
+        <section>
+            <h2>Фильтр</h2>
+            <form action="#" method="POST">
+                <fieldset>
+                    <legend>Инфраструктура:</legend>
+                    <label><input type="checkbox">Бассейн</label>
+                    <label><input type="checkbox">Парковка</label>
+                    <label><input type="checkbox">Wi-fi</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Тип жилья:</legend>
+                    <label><input type="checkbox">Гостиница</label>
+                    <label><input type="checkbox">Мотель</label>
+                    <label><input type="checkbox">Апрартаменты</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Стоимость в сутки (Р):</legend>
+                    <label>
+                        От 0 <input type="number" min="0" max="3000">
+                    </label>
+                    <label>
+                        <input type="number" min="0" max="3000"> До 3000
+                    </label>
+                </fieldset>
+                <button>Показать</button>
+            </form>
+        </section>
+        <section>
+            <header>
+                <h2>Варианты жилья</h2>
+                <p>Найдено: 3</p>
+                <div>
+                    <span>Сортировка:</span>
+                    <ul>
+                        <li><a href="#">По цене</a></li>
+                        <li><a href="#">По типу</a></li>
+                        <li><a href="#">По рейтингу</a></li>
+                    </ul>
+                </div>
+                <ul>
+                    <li><a href="#">По возрастанию</a></li>
+                    <li><a href="#">По убыванию</a></li>
+                </ul>
+            </header>
+            <ul>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="Гостиница Amara resort & spa" width="135"
+                            height="90">
+                        <h3>Amara resort & spa</h3>
+                        <p>Гостиница</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <span>Звезды</span><span>Рейтинг:8,5</span>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="Мотель Desert quail inn" width="135"
+                            height="90">
+                        <h3>Desert quail inn</h3>
+                        <p>Мотель</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <span>Звезды</span><span>Рейтинг:8,5</span>
+                </li>
+                <li>
+                    <div>
+                        <img src="https://via.placeholder.com/135x90" alt="Апрартаменты Villas at poco diablo"
+                            width="135" height="90">
+                        <h3>Villas at poco diablo</h3>
+                        <p>Апрартаменты</p>
+                        <a href="#">Подробнее</a>
+                        <a href="#">Забронировать</a>
+                        <span>Звезды</span><span>Рейтинг:8,5</span>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <a>#Visitsedona</a>
+            Тел:<a href="tel:+74956660166">+7(495) 666-01-66</a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a><img src="https://via.placeholder.com/46x48" alt="Лого Твиттер" width="46" height="48"></a>
+                </li>
+                <li>
+                    <a><img src="https://via.placeholder.com/46x48" alt="Лого Facebook" width="46" height="48"></a>
+                </li>
+                <li>
+                    <a><img src="https://via.placeholder.com/46x48" alt="Лого Youtube" width="46" height="48"></a>
+                </li>
+            </ul>
+        </div>
+        <p>Website by <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="https://via.placeholder.com/115x41"
+                    alt="Лого HTML-Academy" width="115" height="41"></a>
+        </p>
+    </footer>
+</body>
+
+</html>
