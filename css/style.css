@@ -18,8 +18,9 @@
     --special-dark-grey: #666666; /* hotel rating */
     --special-grey: #BDBBBC; /* TML-Academy logo focus */
     --special-dark: #231F20; /* HTML-Academy logo still */
-    --special-dark-blue: #ebebeb; /* input hover bg */
+    --special-dark-blue: #ebebeb; /* input hover background */
     --special-mid-blue: #e5e5e5; /* input focus border */
+    --special-white: rgba(255, 255, 255, 0.9); /* footer background */
 }
 
 /* Global */
@@ -59,6 +60,7 @@ img {
 
 .main-navigation {
   font-weight: 700;
+  font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
   background-color: transparent;
@@ -207,10 +209,125 @@ img {
   background-color: var(--basic-dark-grey);
 }
 
+/* Hotel search parameters */
+
+.hotel-search-section {
+  background-color: var(--basic-light-blue);
+  background-image: url(/img/Background/filter-background.jpg);
+  background-repeat: no-repeat;
+  color: var(--basic-white);
+}
+
+.search-form-subtitle {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Search results */
+
+.search-results-header {
+  color: var(--basic-black);
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.sorting-type {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.sorting-type-list,
+.results-sort-list,
+.search-results-list {
+  list-style: none;
+}
+
+.sorting-type-link {
+  opacity: 0.3;
+}
+
+.sorting-type-link:hover {
+  color: var(--basic-light-blue);
+  opacity: 1;
+}
+
+.sorting-type-link:focus {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.results-sort-item {
+  color: var(--special-light-grey);
+}
+
+.results-sort-item:hover {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.results-sort-item:focus {
+  color: var(--basic-light-blue);
+}
+
+.item-results-img {
+  background-color: var(--basic-light-blue);
+}
+
+.search-results-item h3{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+.more-info-button,
+.booking-button {
+  color: var(--basic-white);
+  font-weight: 700;
+}
+
+.more-info-button {
+  background-color: var(--basic-light-blue);
+}
+
+.more-info-button:hover {
+  background-color: var(--basic-mid-blue);
+}
+
+.more-info-button:focus {
+  background-color: var(--basic-dark-blue);
+  opacity: 0.3;
+}
+
+.booking-button {
+  background-color: var(--basic-light-brown);
+}
+
+.booking-button:hover {
+  background-color: var(--basic-mid-brown);
+}
+
+.booking-button:focus {
+  background-color: var(--basic-dark-brown);
+  opacity: 0.3;
+}
+
+.item-results-stars {
+  color: var(--basic-light-blue);
+}
+
+.item-results-rating {
+  color: var(--special-dark-grey);
+  background-color: var(--basic-light-grey);
+}
+
 /* Main footer */
 
 .main-footer {
   color: var(--basic-black);
+  background-color: var(--special-white);
 }
 
 .footer-contacts {
@@ -249,3 +366,4 @@ img {
 .copyright-button:focus {
   fill: var(--special-grey);
 }
+
