@@ -16,7 +16,10 @@
 
     --special-light-grey: #CACACA; /* down button */
     --special-dark-grey: #666666; /* hotel rating */
+    --special-grey: #BDBBBC; /* TML-Academy logo focus */
     --special-dark: #231F20; /* HTML-Academy logo still */
+    --special-dark-blue: #ebebeb; /* input hover bg */
+    --special-mid-blue: #e5e5e5; /* input focus border */
 }
 
 /* Global */
@@ -94,9 +97,10 @@ img {
 }
 
 .welcome::after {
-  background-image: url(../img/Background/welcome-bottom-shape.png);
-  background-repeat: no-repeat;
-  background-position: top center;
+  content: url(../img/Background/welcome-bottom-shape.png);
+  position: relative;
+  bottom: 0;
+  left: 50%;
 }
 
 /* Features */
@@ -122,7 +126,6 @@ img {
 
 .features-item,
 .tips-item {
-  list-align: center;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -143,4 +146,106 @@ img {
 
 .no-image-item {
   background-color: var(--basic-mid-grey);
+}
+
+/* Appointment */
+
+.hotel-appointment {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--basic-black);
+}
+
+.hotel-appointment h2 {
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.appointment-info {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.appointment-form-dropdown { /*как увеличить размер фона? внутрь div?*/
+  background-color: var(--basic-light-brown);
+  background-size: 568px 86px;
+  font-size: 21px;
+  color: var(--basic-white);
+}
+
+.appointment-form-dropdown:hover {
+  background-color: var(--basic-mid-brown);
+}
+
+.appointment-form-dropdown:focus {
+  background-color: var(--basic-dark-brown);
+}
+
+.appointment-form { /*нужно дублировать шрифты из .hotel-appointment?*/
+
+}
+
+.appointment-item {
+  background-color: var(--basic-light-grey);
+}
+
+.appointment-item:hover {
+  background-color: var(--special-dark-blue);
+}
+
+.appointment-item:focus {
+  background-color: transparent;
+  border: 2px solid var(--special-mid-blue);
+  box-sizing: border-box;
+}
+
+/* Map section */
+
+.main-map {
+  background-color: var(--basic-dark-grey);
+}
+
+/* Main footer */
+
+.main-footer {
+  color: var(--basic-black);
+}
+
+.footer-contacts {
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.footer-social ul {
+  list-style: none;
+}
+
+.social-button img {
+  fill: var(--basic-white);
+}
+.social-button {
+  background-color: var(--basic-light-blue);
+}
+
+.social-button:hover {
+  background-color: var(--basic-mid-blue);
+}
+
+.social-button:focus {
+  background-color: var(--basic-dark-blue);
+  opacity: 0.3;
+}
+
+.copyright-button {
+  fill: var(--special-dark);
+}
+
+.copyright-button:hover {
+  fill: var(--basic-light-blue);
+}
+
+.copyright-button:focus {
+  fill: var(--special-grey);
 }
