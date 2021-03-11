@@ -37,6 +37,11 @@
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 
 a {
@@ -54,6 +59,26 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
+}
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+ /* Main header */
+
+ .main-header {
+  margin-bottom: 0px;
+ }
+
+/* Container */
+
+.container { /* Он тут вообще нужен??? */
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main navigation */
@@ -102,7 +127,7 @@ img {
   content: url(../img/Background/welcome-bottom-shape.png);
   position: relative;
   bottom: 0;
-  left: 50%;
+  left: 0;
 }
 
 /* Features */
