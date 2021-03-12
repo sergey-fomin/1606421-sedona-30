@@ -26,7 +26,7 @@
 /* Global */
 
 .page-body {
-  min-width: 1200px;
+  min-width: 1200px; /* установить фиксированную ширину или так оставить? */
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, Helvetica, sans-serif;
@@ -75,9 +75,9 @@ img {
 
 /* Container */
 
-.container { /* Он тут вообще нужен??? */
-  width: 100%;
-  margin: 0;
+.container {
+  width: 1200px; /* привязать к page-body? 100% от родителя? */
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -120,14 +120,25 @@ img {
   background-image: url(../img/Background/background-welcome.jpg);
   background-color: var(--basic-light-blue);
   background-repeat: no-repeat;
-  background-position: top center;
+  margin: 0;
+
+  display: grid;
+  grid-template-rows: 1fr min-content;
+  outline: 5px solid rgba(104, 255, 3, 0.973);
+  outline-offset: -5px;
 }
 
-.welcome::after {
+.welcome img {
+  margin: auto;
+}
+
+
+.welcome::after { /* не пойму откуда берется отступ снизу */
   content: url(../img/Background/welcome-bottom-shape.png);
-  position: relative;
-  bottom: 0;
-  left: 0;
+  margin: 0;
+  padding: 0;
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 /* Features */
@@ -149,6 +160,26 @@ img {
 .features-list,
 .tips-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features-list {
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+  outline-offset: -5px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content 256px;
+}
+
+.features-list li:nth-child(-n+2) {
+  grid-column: 1 / -1;
+}
+
+.features-item {
+  outline: 5px solid rgba(20, 3, 255, 0.925);
+  outline-offset: -5px;
 }
 
 .features-item,
@@ -173,6 +204,10 @@ img {
 
 .no-image-item {
   background-color: var(--basic-mid-grey);
+}
+
+.no-image-item p {  /* Добавлять маргины на каждый такой элемент для совпадения с макетом? */
+  margin: 0 70px;
 }
 
 /* Appointment */
@@ -353,11 +388,38 @@ img {
 .main-footer {
   color: var(--basic-black);
   background-color: var(--special-white);
+
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+
+  display: grid;
+  grid-template-columns: 73px 327px 400px 327px 73px;
 }
 
 .footer-contacts {
   font-size: 21px;
   line-height: 26px;
+
+  outline: 5px solid rgba(255, 94, 0, 0.877);
+  outline-offset: -5px;
+
+  grid-column: 2 / 3;
+}
+
+.footer-social {
+  outline: 5px solid rgba(255, 94, 0, 0.877);
+  outline-offset: -5px;
+
+  grid-column: 3 / 4;
+
+}
+
+.footer-copyright {
+  outline: 5px solid rgba(255, 94, 0, 0.877);
+  outline-offset: -5px;
+
+  grid-column: 4 / 5;
+
 }
 
 .footer-social ul {
