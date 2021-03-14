@@ -639,6 +639,11 @@ img {
   opacity: 1;
 }
 
+.triangle-icons {
+  width: 11px;
+  height: 10px;
+}
+
 .triangle-icons:hover {
   fill: var(--basic-black);
 }
