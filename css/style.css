@@ -350,7 +350,8 @@ img {
 }
 
 .appointment-form {
-  /*нужно дублировать шрифты из .hotel-appointment?*/
+  height: 395px;
+  box-sizing: border-box;
   margin: 0;
   padding: 55px;
 
@@ -359,23 +360,46 @@ img {
   justify-content: space-between;
 }
 
+.appointment-items {
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .appointment-item {
-  background-color: var(--basic-light-grey);
-}
-
-.appointment-item:hover {
-  background-color: var(--special-dark-blue);
-}
-
-.appointment-item:focus {
-  background-color: transparent;
-  border: 2px solid var(--special-mid-blue);
-  box-sizing: border-box;
-}
-
-.half-item {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+.appointment-input {
+  background-color: var(--basic-light-grey);
+  width: 346px;
+  height: 38px;
+  box-sizing: border-box;
+  border: none;
+}
+
+.appointment-input:hover {
+  background-color: var(--special-dark-blue);
+  border: none;
+}
+
+.appointment-input:focus {
+  background-color: transparent;
+  border: 2px solid var(--special-mid-blue);
+
+}
+
+.half-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mini-input {
+  width: 114px;
 }
 
 .find-button {
@@ -386,6 +410,7 @@ img {
   line-height: 26px;
   color: var(--basic-white);
   text-transform: uppercase;
+  border: none;
 
   background-color: var(--basic-light-blue);
 }
@@ -642,6 +667,7 @@ img {
 
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .footer-social ul {

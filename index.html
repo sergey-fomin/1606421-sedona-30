@@ -104,11 +104,21 @@
       <div class="appointment-hotel-search">
         <a class="button appointment-form-dropdown" href="catalog.html">Поиск гостиницы в Седоне</a>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-          <label>Дата заезда: <input class="appointment-item" type="date"></label>
-          <label>Дата выезда: <input class="appointment-item" type="date"></label>
-          <div class="half-item">
-            <label>Взрослые <input class="appointment-item item-to-left" type="number" min="0" placeholder="2"></label>
-            <label>Дети <input class="appointment-item item-to-right" type="number" min="0" placeholder="0"></label>
+          <div class="appointment-items">
+            <div class="appointment-item">
+              <label class="appointment-label" for="check-in-date">Дата заезда:</label>
+              <input class="appointment-input" type="date" id="check-in-date">
+            </div>
+            <div class="appointment-item">
+              <label class="appointment-label" for="check-out-date">Дата выезда: </label>
+              <input class="appointment-input" type="date" id="check-out-date">
+            </div>
+            <div class="half-items">
+              <label>Взрослые </label><input class="appointment-input mini-input" type="number" id="adult-counter"
+                min="0" placeholder="2">
+              <label>Дети </label><input class="appointment-input mini-input" type="number" id="kids-counter" min="0"
+                placeholder="0">
+            </div>
           </div>
           <button class="find-button">Найти</button>
         </form>
