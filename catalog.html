@@ -24,8 +24,8 @@
         <li class="nav-column-4"><a class="navigation-link navigation-link-current">Гостиницы</a></li>
       </ul>
     </nav>
-    <a class="main-header-logo" href="index.html"><img src="img/Icons/logo-sedona.png" alt="Логотип сайта города Седоны" width="138"
-        height="70"></a>
+    <a class="main-header-logo" href="index.html"><img src="img/Icons/logo-sedona.png" alt="Логотип сайта города Седоны"
+        width="138" height="70"></a>
   </header>
 
   <main class="container">
@@ -34,28 +34,30 @@
     <section class="hotel-search-section">
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="hotel-search-form" action="#" method="POST">
-        <fieldset>
+        <fieldset class="checkbox-field infrastructure">
           <legend class="search-form-subtitle">Инфраструктура:</legend>
           <label><input class="search-form-checkbox" type="checkbox" checked>Бассейн</label>
           <label><input class="search-form-checkbox" type="checkbox">Парковка</label>
           <label><input class="search-form-checkbox" type="checkbox">Wi-fi</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="checkbox-field hotel-type">
           <legend class="search-form-subtitle">Тип жилья:</legend>
           <label><input class="search-form-checkbox" type="checkbox" checked>Гостиница</label>
           <label><input class="search-form-checkbox" type="checkbox" checked>Мотель</label>
           <label><input class="search-form-checkbox" type="checkbox" checked>Апрартаменты</label>
         </fieldset>
-        <fieldset>
-          <legend class="search-form-subtitle">Стоимость в сутки (Р):</legend>
-          <label>
-            От 0 <input class="coast-search" type="number" min="0" max="3000">
-          </label>
-          <label>
-            <input class="coast-search" type="number" min="0" max="3000"> До 3000
-          </label>
-        </fieldset>
-        <button class="coast-search-button">Показать</button>
+        <div class="coast-per-day">
+          <fieldset class="coast-search-field">
+            <legend class="search-form-subtitle">Стоимость в сутки (Р):</legend>
+            <label>
+              От 0 <input class="coast-search" type="number" min="0" max="3000">
+            </label>
+            <label>
+              <input class="coast-search" type="number" min="0" max="3000"> До 3000
+            </label>
+          </fieldset>
+          <button class="coast-search-button">Показать</button>
+        </div>
       </form>
     </section>
 
@@ -72,44 +74,53 @@
           </ul>
         </div>
         <ul class="results-sort-list">
-          <li class="results-sort-item"><a href="#">По возрастанию</a></li>
-          <li class="results-sort-item"><a href="#">По убыванию</a></li>
+          <li class="results-sort-item"><a href="#" title="По возрастанию"><img class="triangle-icons"
+                src="img/Icons/triangle-up.svg" alt="" width="11px" height="10px"></a></li>
+          <li class="results-sort-item"><a href="#" title="По убыванию"><img class="triangle-icons"
+                src="img/Icons/triangle-down.svg" alt="" width="11px" height="10px"></a></li>
         </ul>
       </header>
 
       <ul class="search-results-list">
-        <li>
-          <div class="search-results-item">
-            <img class="item-results-img" src="img/Content/amara-resort.jpg" alt="Гостиница Amara resort & spa"
-              width="135" height="90">
-            <h3>Amara resort & spa</h3>
-            <p>Гостиница</p>
-            <p>От 4000 Р.</p>
+        <li class="search-results-item card-amara-resort">
+          <img class="item-results-img" src="img/Content/amara-resort.jpg" alt="Гостиница Amara resort & spa"
+            width="135" height="90">
+          <div class="card-info">
+            <h3 class="info-hotel-title">Amara resort & spa</h3>
+            <p class="info-hotel-type">Гостиница</p>
+            <p class="info-hotel-coast">От 4000 Р.</p>
             <a class="button more-info-button" href="#">Подробнее</a>
             <a class="button booking-button" href="#">Забронировать</a>
+          </div>
+          <div class="rating-info">
             <span class="item-results-stars">★★★★</span><span class="item-results-rating">Рейтинг:8,5</span>
           </div>
         </li>
-        <li>
-          <div class="search-results-item">
-            <img class="item-results-img" src="img/Content/desert-quail.jpg" alt="Мотель Desert quail inn" width="135"
-              height="90">
-            <h3>Desert quail inn</h3>
-            <p>Мотель</p>
-            <p>От 3000 Р.</p>
+        <li class="search-results-item card-desert-quail">
+          <img class="item-results-img" src="img/Content/desert-quail.jpg" alt="Мотель Desert quail inn" width="135"
+            height="90">
+          <div class="card-info">
+            <h3 class="info-hotel-title">Desert quail inn</h3>
+            <p class="info-hotel-type">Мотель</p>
+            <p class="info-hotel-coast">От 3000 Р.</p>
             <a class="button more-info-button" href="#">Подробнее</a>
             <a class="button booking-button" href="#">Забронировать</a>
+          </div>
+          <div class="rating-info">
             <span class="item-results-stars">★★★</span><span class="item-results-rating">Рейтинг:8,9</span>
+          </div>
         </li>
-        <li>
-          <div class="search-results-item">
-            <img class="item-results-img" src="img/Content/villas-at-poco-diablo.jpg"
-              alt="Апрартаменты Villas at poco diablo" width="135" height="90">
-            <h3>Villas at poco diablo</h3>
-            <p>Апрартаменты</p>
-            <p>От 2000 Р.</p>
+        <li class="search-results-item card-villas-diablo">
+          <img class="item-results-img" src="img/Content/villas-at-poco-diablo.jpg"
+            alt="Апрартаменты Villas at poco diablo" width="135" height="90">
+          <div class="card-info">
+            <h3 class="info-hotel-title">Villas at poco diablo</h3>
+            <p class="info-hotel-type">Апрартаменты</p>
+            <p class="info-hotel-coast">От 2000 Р.</p>
             <a class="button more-info-button" href="#">Подробнее</a>
             <a class="button booking-button" href="#">Забронировать</a>
+          </div>
+          <div class="rating-info">
             <span class="item-results-stars">★★</span><span class="item-results-rating">Рейтинг:9,2</span>
           </div>
         </li>
