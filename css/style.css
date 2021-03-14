@@ -168,19 +168,12 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-
-  outline: 5px solid rgba(104, 255, 3, 0.7);
-  outline-offset: -5px;
 }
 
 .welcome-img {
   width: 458px;
   height: 352px;
   margin: auto;
-
-  outline: 5px solid rgba(4, 205, 255, 0.877);
-  outline-offset: -5px;
-
 }
 
 .welcome::after {
@@ -188,8 +181,6 @@ img {
   height: 57px;
   margin: 0;
   padding: 0;
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
 }
 
 /* Features */
@@ -217,9 +208,7 @@ img {
 }
 
 .features-list {
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
-
+  margin-top: 51px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: min-content 256px 256px;
@@ -239,13 +228,15 @@ img {
 .card-2 {
   width: 400px;
   margin: 0;
-  padding: 0;
+  padding: 0 50px;
+  box-sizing: border-box;
+}
+
+.card-2-img {
+  order: -1;
 }
 
 .features-item {
-  outline: 5px solid rgba(20, 3, 255, 0.7);
-  outline-offset: -5px;
-
   margin: 0;
   padding: 0;
 }
@@ -266,10 +257,16 @@ img {
 }
 
 .no-image-item {
-  margin: 0 71px;
+  padding: 0 71px;
   background-color: var(--basic-mid-grey);
+  display: flex;
 }
 
+.card-3,
+.card-4,
+.card-5 {
+  margin: auto;
+}
 
 .tips-list {
   display: grid;
@@ -280,15 +277,17 @@ img {
   min-height: 330px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  padding: 0 50px;
 
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 }
 
 .tips-item p {
   color: var(--basic-extra-dark);
+  margin-top: 0;
 }
 
 .tips-item img {
@@ -324,9 +323,8 @@ img {
   padding: 0;
   width: 568px;
 
-  outline: 5px solid rgba(20, 3, 255, 0.7);
+  outline: 5px solid rgba(245, 14, 45, 0.7);
   outline-offset: -5px;
-
 
   display: flex;
   flex-direction: column;
@@ -398,7 +396,7 @@ img {
 
 .find-button:focus {
   background-color: var(--basic-dark-blue);
-  opacity: 0.3;  /* как присвоить тексту, а не всей кнопке? */
+  opacity: 0.3; /* как присвоить тексту, а не всей кнопке? */
 }
 
 /* Map section */
@@ -631,7 +629,6 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .footer-social li {
@@ -639,7 +636,6 @@ img {
   height: 48px;
   width: 46px;
 }
-
 
 .footer-copyright {
   grid-column: 4 / 5;
