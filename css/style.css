@@ -374,6 +374,7 @@ img {
 }
 
 .appointment-input {
+  font-family: inherit;
   background-color: var(--basic-light-grey);
   width: 346px;
   height: 38px;
@@ -387,9 +388,8 @@ img {
 }
 
 .appointment-input:focus {
-  background-color: transparent;
+  background-color: var(--basic-white);
   border: 2px solid var(--special-mid-blue);
-
 }
 
 .half-items {
@@ -488,6 +488,45 @@ img {
   flex-direction: column;
 }
 
+.checkbox-field label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 40px;
+  padding-bottom: 25px;
+}
+
+.search-form-checkbox:not(:checked) + label::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  left: 0;
+  top: -1px;
+  background-image: url(/img/Icons/checkbox-shape.svg);
+}
+
+.search-form-checkbox:checked + label::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  left: 0;
+  top: -1px;
+  background-image: url(/img/Icons/checkbox-checked-shape.svg);
+}
+
+.search-form-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  height: 17px;
+  width: 22px;
+  left: 4px;
+  top: 0px;
+  background-image: url(/img/Icons/check-sign.svg);
+}
+
 /* Search results */
 
 .search-results-header {
@@ -577,9 +616,10 @@ img {
 .card-info {
   grid-column: 3 / 4;
   display: grid;
-  grid-template-areas: 'title title title'
-                       'type coast .'
-                       'info booking .';
+  grid-template-areas:
+    "title title title"
+    "type coast ."
+    "info booking .";
   column-gap: 6px;
   grid-template-columns: min-content min-content 1fr;
   grid-template-rows: min-content min-content min-content;
@@ -673,7 +713,6 @@ img {
   background-color: var(--basic-dark-blue);
   opacity: 0.3;
 }
-
 
 .booking-button:hover {
   background-color: var(--basic-mid-brown);
