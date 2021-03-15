@@ -36,25 +36,45 @@
       <form class="hotel-search-form" action="#" method="POST">
         <fieldset class="checkbox-field infrastructure">
           <legend class="search-form-subtitle">Инфраструктура:</legend>
-          <label><input class="search-form-checkbox" type="checkbox" checked>Бассейн</label>
-          <label><input class="search-form-checkbox" type="checkbox">Парковка</label>
-          <label><input class="search-form-checkbox" type="checkbox">Wi-fi</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-pool" checked>
+          <label for="search-form-pool">Бассейн</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-parking">
+          <label for="search-form-parking">Парковка</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-wifi">
+          <label for="search-form-wifi">Wi-fi</label>
         </fieldset>
         <fieldset class="checkbox-field hotel-type">
           <legend class="search-form-subtitle">Тип жилья:</legend>
-          <label><input class="search-form-checkbox" type="checkbox" checked>Гостиница</label>
-          <label><input class="search-form-checkbox" type="checkbox" checked>Мотель</label>
-          <label><input class="search-form-checkbox" type="checkbox" checked>Апрартаменты</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-hotel" checked>
+          <label for="search-form-hotel">Гостиница</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-motel" checked>
+          <label for="search-form-motel">Мотель</label>
+          <input class="visually-hidden search-form-checkbox" type="checkbox" id="search-form-apartment" checked>
+          <label for="search-form-apartment">Апрартаменты</label>
         </fieldset>
         <div class="coast-per-day">
           <fieldset class="coast-search-field">
             <legend class="search-form-subtitle">Стоимость в сутки (Р):</legend>
-            <label>
-              От 0 <input class="coast-search" type="number" min="0" max="3000">
-            </label>
-            <label>
-              <input class="coast-search" type="number" min="0" max="3000"> До 3000
-            </label>
+            <div class="range-filter">
+              <div class="price-controls">
+                <label class="min-price">
+                  От 0 <input class="coast-search visually-hidden" type="number" name="min-price" min="0" max="3000" value="0">
+                </label>
+                <!--  убрать класс инпута?  -->
+                <label class="max-price">
+                  <input class="coast-search visually-hidden" type="number" name="max-price" min="0" max="3000" value="3000"> До 3000
+                </label>
+              </div>
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+
+            </div>
+
           </fieldset>
           <button class="coast-search-button">Показать</button>
         </div>
