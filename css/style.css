@@ -761,7 +761,7 @@ img {
   list-style: none;
 }
 
-.social-button-img {
+.social-button svg {
   fill: var(--basic-white);
 }
 .social-button {
@@ -769,6 +769,7 @@ img {
 
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 46px;
   height: 48px;
 }
