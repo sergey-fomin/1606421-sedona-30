@@ -624,8 +624,6 @@ img {
   height: 86px;
   margin: 0px;
   padding: 0;
-  outline: 5px solid rgba(255, 81, 0, 0.7);
-  outline-offset: -5px;
 
   display: grid;
   grid-template-columns: 73px 135px 29px 1fr max-content 73px;
@@ -667,6 +665,10 @@ img {
   grid-column: 5 / 6;
   align-self: center;
   display: flex;
+
+  outline: 5px solid rgba(255, 81, 0, 0.7);
+  outline-offset: -5px;
+
 }
 
 .results-sort-item {
