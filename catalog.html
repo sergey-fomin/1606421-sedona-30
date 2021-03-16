@@ -58,11 +58,13 @@
             <div class="range-filter">
               <div class="price-controls">
                 <label class="min-price">
-                  От 0 <input class="coast-search visually-hidden" type="number" name="min-price" min="0" max="3000" value="0">
+                  От 0 <input class="coast-search visually-hidden" type="number" name="min-price" min="0" max="3000"
+                    value="0">
                 </label>
                 <!--  убрать класс инпута?  -->
                 <label class="max-price">
-                  <input class="coast-search visually-hidden" type="number" name="max-price" min="0" max="3000" value="3000"> До 3000
+                  <input class="coast-search visually-hidden" type="number" name="max-price" min="0" max="3000"
+                    value="3000"> До 3000
                 </label>
               </div>
               <div class="range-controls">
@@ -79,9 +81,7 @@
                 left: 80%
                 "></div>
               </div>
-
             </div>
-
           </fieldset>
           <button class="coast-search-button">Показать</button>
         </div>
@@ -95,16 +95,20 @@
         <div class="sorting-type">
           <span>Сортировка:</span>
           <ul class="sorting-type-list">
-            <li><a class="sorting-type-link" href="#">По цене</a></li>
+            <li><a class="sorting-type-link sorting-link-current" href="#">По цене</a></li>
             <li><a class="sorting-type-link" href="#">По типу</a></li>
             <li><a class="sorting-type-link" href="#">По рейтингу</a></li>
           </ul>
         </div>
         <ul class="results-sort-list">
-          <li class="results-sort-item"><a href="#" title="По возрастанию"><img class="triangle-icons"
-                src="img/Icons/triangle-up.svg" alt=""></a></li>
-          <li class="results-sort-item"><a href="#" title="По убыванию"><img class="triangle-icons"
-                src="img/Icons/triangle-down.svg" alt=""></a></li>
+          <li class="results-sort-item"><a href="#" title="По возрастанию"><svg width="11" height="10"
+                viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA" />
+              </svg></a></li>
+          <li class="results-sort-item"><a href="#" title="По убыванию"><svg width="11" height="10" viewBox="0 0 11 10"
+                fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5.5 10L0 0H11" fill="#CACACA" />
+              </svg></a></li>
         </ul>
       </header>
 
