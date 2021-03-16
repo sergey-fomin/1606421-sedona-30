@@ -553,11 +553,12 @@ img {
 .range-controls {
   width: 316px;
   height: 42px;
+  position: relative;
+  padding-top: 20px;
 }
 
 .range-controls .scale {
   height: 2px;
-  margin-top: 20px;
   background-color: var(--basic-white);
   opacity: 0.3;
 }
@@ -566,7 +567,25 @@ img {
   width: 80%;
   height: 2px;
   background-color: var(--basic-white);
-  z-index: 20;
+  opacity: 1; /* почему не работает? */
+}
+
+.range-controls .toggle {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  padding: 0;
+  background-color: #ababab;
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #ababab;
+  cursor: pointer;
+}
+
+.range-controls .toggle-max {
+  left: 252px;
 }
 
 /* Search results */
