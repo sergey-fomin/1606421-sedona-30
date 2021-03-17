@@ -748,27 +748,44 @@ img {
     "type coast ."
     "info booking .";
   column-gap: 6px;
+  margin-top: 24px;
+  margin-bottom: 30px;
   grid-template-columns: min-content min-content 1fr;
-  grid-template-rows: min-content min-content min-content;
+  grid-template-rows: auto auto auto;
 }
 
 .rating-info {
+  min-height: 150px;
   grid-column: 5 / 6;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  align-content: space-between;
 }
 
 .info-hotel-title {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  margin-top: 24px;
+  color: var(--basic-black);
+
   grid-area: title;
+  margin: 0;
+  padding: 0;
+
 }
 
 .info-hotel-type {
   grid-area: type;
+  margin: 7px 0;
+  padding: 0;
 }
 
 .info-hotel-coast {
   grid-area: coast;
+  margin: 7px 0;
+  padding: 0;
 }
 
 .more-info-button {
@@ -805,17 +822,11 @@ img {
   fill: var(--basic-light-blue);
 }
 
-.info-hotel-title {
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
-  color: var(--basic-black);
-}
-
 .more-info-button,
 .booking-button {
   color: var(--basic-white);
   font-weight: 700;
+  margin-top: 8px;
 }
 
 .more-info-button:hover {
@@ -838,16 +849,18 @@ img {
 
 .item-results-stars {
   color: var(--basic-light-blue);
-  margin: 25px 0;
+  margin-top: 30px;
 }
 
 .item-results-rating {
   color: var(--special-dark-grey);
   background-color: var(--basic-light-grey);
-  margin: 25px 0;
   width: 110px;
+  height: 27px;
+  margin-bottom: 30px;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 /* Main footer */
