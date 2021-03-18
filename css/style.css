@@ -37,6 +37,7 @@
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
+  box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 
   min-height: 100%;
   display: grid;
@@ -65,6 +66,7 @@ img {
 
 .page {
   height: 100%;
+  background-color: var(--basic-light-grey);
 }
 
 /* Main header */
@@ -111,26 +113,26 @@ img {
   align-items: center;
 }
 
-/*.nav-column-1*/ .site-navigation li:nth-child(4n+1) {
+.site-navigation li:nth-child(4n+1) {
   grid-column: 1 / 2;
 
   padding-left: 73px;
 }
 
-/*.nav-column-2*/ .site-navigation li:nth-child(4n+2){
+.site-navigation li:nth-child(4n+2){
   grid-column: 2 / 3;
 
   padding-left: 100px;
 }
 
-/*.nav-column-3*/ .site-navigation li:nth-child(4n+3) {
+.site-navigation li:nth-child(4n+3) {
   grid-column: 4 / 5;
 
   text-align: right;
   padding-right: 99px;
 }
 
-/*.nav-column-4*/ .site-navigation li:nth-child(4n+4) {
+.site-navigation li:nth-child(4n+4) {
   grid-column: 5 / 6;
 
   text-align: right;
@@ -141,11 +143,12 @@ img {
   color: var(--basic-black);
 }
 
-.navigation-link:hover {
+.navigation-link:hover,
+.navigation-link:focus {
   color: var(--basic-light-blue);
 }
 
-.navigation-link:focus {
+.navigation-link:active {
   color: var(--basic-black);
   opacity: 0.3;
 }
@@ -471,7 +474,7 @@ img {
 
 .hotel-search-form {
   display: grid;
-  grid-template-columns: 73px max-content 120px max-content 1fr max-content 73px;
+  grid-template-columns: 73px max-content 117px max-content 1fr max-content 73px;
 }
 
 .infrastructure,
@@ -485,7 +488,7 @@ img {
 .search-form-subtitle {
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 24px;
+  margin-bottom: 11px;
 }
 
 .search-form-checkbox {
@@ -891,13 +894,13 @@ img {
 /* Main footer */
 
 .index-footer {
-  margin-top: -120px;
+  margin-top: -122px;
 }
 
 .main-footer {
   color: var(--basic-black);
   background-color: var(--special-white);
-  height: 120px;
+  height: 122px;
 
   display: grid;
   grid-template-columns: 73px 327px 400px 327px 73px;
@@ -970,11 +973,12 @@ img {
   height: 48px;
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
   background-color: var(--basic-mid-blue);
 }
 
-.social-button:focus {
+.social-button:active path {
   background-color: var(--basic-dark-blue);
   opacity: 0.3;
 }
@@ -983,10 +987,11 @@ img {
   fill: var(--special-dark);
 }
 
-.copyright-button:hover {
+.copyright-button:hover path,
+.copyright-button:focus path {
   fill: var(--basic-light-blue);
 }
 
-.copyright-button:focus {
+.copyright-button:active path {
   fill: var(--special-grey);
 }
