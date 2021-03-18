@@ -107,25 +107,31 @@
       <p class="appointment-info">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц
         в Седоне</p>
       <div class="appointment-hotel-search">
-        <a class="button appointment-form-dropdown" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <div class="appointment-form-dropdown">
+          <a href="catalog.html">Поиск гостиницы в Седоне</a>
+        </div>
         <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="appointment-items">
             <div class="appointment-item">
               <label class="appointment-label" for="check-in-date">Дата заезда:</label>
-              <input class="appointment-input" type="date" id="check-in-date">
+              <input class="appointment-input" type="text" id="check-in-date" placeholder="24 апреля 2017">
             </div>
             <div class="appointment-item">
               <label class="appointment-label" for="check-out-date">Дата выезда: </label>
-              <input class="appointment-input" type="date" id="check-out-date">
+              <input class="appointment-input" type="text" id="check-out-date" placeholder="4 июля 2017">
             </div>
             <div class="half-items">
+              <div class="half-item half-item-to-left">
               <label>Взрослые: </label><input class="appointment-input mini-input" type="number" id="adult-counter"
                 min="0" placeholder="2">
+              </div>
+              <div class="half-item half-item-to-right">
               <label>Дети: </label><input class="appointment-input mini-input" type="number" id="kids-counter" min="0"
                 placeholder="0">
+              </div>
             </div>
           </div>
-          <button class="find-button">Найти</button>
+          <button class="find-button"><span>Найти</span></button>
         </form>
       </div>
     </section>

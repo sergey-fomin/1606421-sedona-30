@@ -360,19 +360,27 @@ img {
   background-color: var(--basic-light-brown);
   height: 86px;
   font-size: 21px;
-  color: var(--basic-white);
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.appointment-form-dropdown:hover {
+.appointment-form-dropdown a {
+  color: var(--basic-white);
+}
+
+.appointment-form-dropdown:hover,
+.appointment-form-dropdown:focus {
   background-color: var(--basic-mid-brown);
 }
 
-.appointment-form-dropdown:focus {
+.appointment-form-dropdown:active {
   background-color: var(--basic-dark-brown);
+}
+
+.appointment-form-dropdown:active a {
+  opacity: 0.3;
 }
 
 .appointment-form {
@@ -403,20 +411,28 @@ img {
   align-items: center;
 }
 
+/* Не получается изменить цвет placeholder'a */
 .appointment-input {
   font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: uppercase;
+  color: var(--basic-black);
   background-color: var(--basic-light-grey);
   width: 346px;
   height: 38px;
+  text-indent: 10px;
   box-sizing: border-box;
   border: none;
 }
+
 
 .appointment-input:hover {
   background-color: var(--special-dark-blue);
   border: none;
 }
 
+/* Не получается изменить цвет обводки при наведении */
 .appointment-input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-mid-blue);
@@ -427,6 +443,22 @@ img {
   justify-content: space-between;
   align-items: center;
 }
+
+.half-item {
+  width: 226px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.half-item-to-right {
+  justify-content: flex-end;
+}
+
+.half-item-to-right label {
+  margin-right: 30px;
+}
+
 
 .mini-input {
   width: 114px;
@@ -445,12 +477,16 @@ img {
   background-color: var(--basic-light-blue);
 }
 
-.find-button:hover {
+.find-button:hover,
+.find-button:focus {
   background-color: var(--basic-mid-blue);
 }
 
-.find-button:focus {
+.find-button:active {
   background-color: var(--basic-dark-blue);
+}
+
+.find-button:active span {
   opacity: 0.3; /* как присвоить тексту, а не всей кнопке? */
 }
 
