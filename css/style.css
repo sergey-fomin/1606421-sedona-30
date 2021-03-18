@@ -526,10 +526,15 @@ img {
   margin: 0;
 }
 
-.search-form-subtitle {
+.search-form-subtitle,
+.checkbox-subtitle {
   font-size: 16px;
   font-weight: 700;
   margin-bottom: 11px;
+}
+
+.checkbox-subtitle {
+  margin-bottom: 25px;
 }
 
 .search-form-checkbox {
@@ -611,6 +616,14 @@ img {
   align-items: center;
 }
 
+.price-controls:before {
+  content: "";
+  width: 2px;
+  height: 22px;
+  background: var(--basic-white);
+  position: absolute;
+}
+
 /* не пойму почему не отображается
 
 .max-price::before {
@@ -636,6 +649,8 @@ img {
 }
 
 .range-controls .bar {
+  position: absolute;
+  top: 20px;
   width: 80%;
   height: 2px;
   background-color: var(--basic-white);
@@ -677,10 +692,8 @@ img {
 }
 
 .toggle:hover {
-  top: 9px;
-  width: 6px;
-  height: 6px;
-  border: 9px solid var(--basic-white);
+  transform: scale(1.2);
+  transition: transform 0.2s;
 }
 
 /* Search results header */
