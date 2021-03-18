@@ -162,7 +162,8 @@ img {
   background-color: var(--basic-light-blue);
   background-repeat: no-repeat;
   margin: 0;
-  padding: 0;
+  padding-top: 77px;
+  box-sizing: border-box;
 
   display: flex;
   flex-direction: column;
@@ -173,7 +174,7 @@ img {
 .welcome-img {
   width: 458px;
   height: 352px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .welcome::after {
