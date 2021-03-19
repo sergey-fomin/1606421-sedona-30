@@ -233,56 +233,33 @@ img {
   align-items: center;
 }
 
-/* .card-1,
-.card-2 { */
 .card {
   width: 400px;
-  /* margin-top: 47px; */
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
   padding-top: 47px;
   padding-left: 49px;
   padding-right: 49px;
   padding-bottom: 54px;
-  /* align-items: ; */
+
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  /* display: grid;
-  grid-template-rows: min-content 1fr min-content; */
 }
 
 .card h3 {
   margin-top: 0;
   margin-bottom: 25px;
   box-sizing: border-box;
-  /* margin-bottom: 25px;
-  min-height: 115px;
-  box-sizing: border-box; */
 }
 
 .card p {
   margin-top: 25px;
   margin-bottom: 0;
   box-sizing: border-box;
-
-  /* margin-top: 23px;
-  min-height: 120px;
-  box-sizing: border-box; */
 }
 
-/* .card span {
-  margin-top: 25px;
-  margin-bottom: 23px;
-} */
-
-/* .card-2-img  */
 .card-img-to-left {
   order: -1;
-}
-
-.features-item {
-  /* margin: 0;
-  padding: 0; */
 }
 
 .features-item,
@@ -298,30 +275,19 @@ img {
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
-  /* margin-top: 28px;
-  margin-bottom: 0px; */
 }
 
 .no-image-item {
   width: 400px;
   min-height: 256px;
-  /* padding: 0 25px; */
   box-sizing: border-box;
   background-color: var(--basic-mid-grey);
-  /* display: flex; */
-  /* justify-content: space-around; */
 }
 
 .no-image-item .card {
   padding-left: 69px;
   padding-right: 69px;
 }
-
-/* .card-3,
-.card-4,
-.card-5 {
-  margin: auto;
-} */
 
 .tips-list {
   display: grid;
@@ -337,7 +303,6 @@ img {
   padding-right: 50px;
   padding-left: 50px;
   padding-bottom: 68px;
-  /* margin: 0; */
 
   display: flex;
   flex-direction: column;
@@ -381,7 +346,7 @@ img {
   font-weight: 400;
   font-size: 14px;
   margin-top: 35px;
-  /* line-height: 24px; */
+  line-height: 24px;
 }
 
 .appointment-hotel-search {
@@ -527,7 +492,7 @@ img {
 }
 
 .find-button:active span {
-  opacity: 0.3; /* как присвоить тексту, а не всей кнопке? */
+  opacity: 0.3;
 }
 
 /* Map section */
@@ -640,17 +605,19 @@ img {
 
 /* Range filter */
 
-.range-filter {
+/* .range-filter {
   outline: 5px solid rgba(0, 247, 255, 0.856);
   outline-offset: -5px;
-}
+} */
 
 .price-controls {
   width: 313px;
   height: 32px;
+  position: relative;
   background-color: transparent;
   border: 2px solid var(--basic-white);
   border-radius: 2px;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -662,18 +629,14 @@ img {
   height: 22px;
   background: var(--basic-white);
   position: absolute;
+  left: 157px;
 }
 
-/* не пойму почему не отображается
-
-.max-price::before {
-  content: "";
-  width: 2px;
-  height: 22px;
-  color: var(--basic-white);
-  z-index: 20;
+.min-price,
+.max-price {
+  padding-left: 15px;
+  box-sizing: border-box;
 }
-*/
 
 .range-controls {
   width: 316px;
