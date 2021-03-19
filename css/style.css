@@ -113,26 +113,26 @@ img {
   align-items: center;
 }
 
-.site-navigation li:nth-child(4n+1) {
+.site-navigation li:nth-child(4n + 1) {
   grid-column: 1 / 2;
 
   padding-left: 73px;
 }
 
-.site-navigation li:nth-child(4n+2){
+.site-navigation li:nth-child(4n + 2) {
   grid-column: 2 / 3;
 
   padding-left: 100px;
 }
 
-.site-navigation li:nth-child(4n+3) {
+.site-navigation li:nth-child(4n + 3) {
   grid-column: 4 / 5;
 
   text-align: right;
   padding-right: 99px;
 }
 
-.site-navigation li:nth-child(4n+4) {
+.site-navigation li:nth-child(4n + 4) {
   grid-column: 5 / 6;
 
   text-align: right;
@@ -411,11 +411,16 @@ img {
 }
 
 .appointment-item {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+.appointment--date-input {
+  margin: 0;
+  padding: 0;
+}
 /* Не получается изменить цвет placeholder'a */
 .appointment-input {
   font-family: inherit;
@@ -431,16 +436,29 @@ img {
   border: none;
 }
 
-
 .appointment-input:hover {
   background-color: var(--special-dark-blue);
-  border: none;
 }
 
 /* Не получается изменить цвет обводки при наведении */
 .appointment-input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-mid-blue);
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+}
+
+.calendar-icon:focus path,
+.calendar-icon:hover path {
+  fill: var(--basic-black);
+}
+
+.calendar-icon:active path {
+  fill: var(--basic-light-blue);
 }
 
 .half-items {
@@ -461,9 +479,8 @@ img {
 }
 
 .half-item-to-right label {
-  margin-right: 30px;
+  margin-right: 28px;
 }
-
 
 .mini-input {
   width: 114px;
@@ -657,7 +674,6 @@ img {
   width: 80%;
   height: 2px;
   background-color: var(--basic-white);
-  opacity: 1; /* почему не работает? */
 }
 
 .range-controls .toggle {
@@ -687,9 +703,10 @@ img {
   border: 2px solid var(--basic-white);
   border-radius: 2px;
   background-color: transparent;
-  margin-left: 85px;}
+  margin-left: 85px;
+}
 
-  .coast-search-button:hover {
+.coast-search-button:hover {
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
@@ -778,7 +795,6 @@ img {
   border-bottom: none;
 }
 
-
 .sorting-type-link a:active {
   color: var(--basic-black);
   opacity: 1;
@@ -810,7 +826,6 @@ img {
 .results-sort-link-current path {
   fill: var(--basic-light-blue);
 }
-
 
 /* Search results */
 
@@ -870,7 +885,6 @@ img {
   grid-area: title;
   margin: 0;
   padding: 0;
-
 }
 
 .info-hotel-link {
@@ -939,7 +953,6 @@ img {
 .more-info-button:active a {
   opacity: 0.3;
 }
-
 
 .booking-button:hover,
 .booking-button:focus {
