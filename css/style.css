@@ -740,7 +740,7 @@ img {
 }
 
 .sorting-type-list {
-  margin-left: 10px;
+  margin-left: 7px;
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -750,46 +750,63 @@ img {
   grid-column: 5 / 6;
   align-self: center;
   display: flex;
+}
 
-  outline: 5px solid rgba(255, 81, 0, 0.7);
-  outline-offset: -5px;
-
+.sorting-type-link a {
+  color: var(--basic-black);
+  opacity: 0.3;
 }
 
 .sorting-type-link {
-  opacity: 0.3;
-  margin-left: 30px;
+  margin-left: 32px;
+  border-bottom: 1px dashed var(--basic-light-blue);
 }
 
 .sorting-type-list li:nth-child(odd) {
   margin-top: 1px;
+  margin-left: 33px;
 }
 
-.sorting-type-link:hover {
+.sorting-type-link a:hover,
+.sorting-type-link a:focus {
   color: var(--basic-light-blue);
   opacity: 1;
 }
 
-.sorting-type-link:focus {
+.sorting-type-link:active {
+  border-bottom: none;
+}
+
+
+.sorting-type-link a:active {
   color: var(--basic-black);
   opacity: 1;
 }
 
 .sorting-link-current {
+  border-bottom: none;
+}
+
+.sorting-link-current a {
   color: var(--basic-light-blue);
-  opacity: 1 ;
+  opacity: 1;
 }
 
 .results-sort-item {
   margin-left: 12px;
 }
 
-/* Не работает!!!! */
-.results-sort-item:hover {
+.results-sort-link path {
+  fill: var(--special-light-grey);
+}
+
+.results-sort-link:hover path,
+.results-sort-link:focus path {
   fill: var(--basic-black);
 }
 
-.results-sort-item:focus {
+.results-sort-link:active path,
+.results-sort-link-current path {
   fill: var(--basic-light-blue);
 }
 
