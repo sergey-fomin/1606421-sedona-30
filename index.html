@@ -139,12 +139,40 @@
             </div>
             <div class="half-items">
               <div class="half-item half-item-to-left">
-                <label>Взрослые: </label><input class="appointment-input mini-input" type="number" id="adult-counter"
-                  min="0" placeholder="2">
+                <label for="adult-counter">Взрослые: </label>
+                <span class="number-counter">
+                  <span class="number-input number-input-button" tabindex="-1">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="3" fill="#A9A9A9" />
+                    </svg>
+                  </span>
+                  <input class="number-input" id="adult-counter" type="number" min="0" max="10" value="2" />
+                  <span class="number-input number-input-button" tabindex="-1">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                        fill="#A9A9A9" />
+                    </svg>
+                  </span>
+                </span>
               </div>
               <div class="half-item half-item-to-right">
-                <label>Дети: </label><input class="appointment-input mini-input" type="number" id="kids-counter" min="0"
-                  placeholder="0">
+                <label for="kids-counter">Дети: </label>
+                <span class="number-counter">
+                  <span class="number-input number-input-button" tabindex="-1">
+                    <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <rect width="12" height="3" fill="#A9A9A9" />
+                    </svg>
+                  </span>
+                  <input class="number-input" id="kids-counter" type="number" min="0" max="10" value="0" />
+                  <span class="number-input number-input-button" tabindex="-1">
+                    <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M4.23086 6.76932V11H6.76932V6.76932H11V4.23086H6.76932V0H4.23085V4.23086H0V6.76932H4.23086Z"
+                        fill="#A9A9A9" />
+                    </svg>
+                  </span>
+                </span>
               </div>
             </div>
           </div>

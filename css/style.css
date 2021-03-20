@@ -474,7 +474,7 @@ img {
   align-items: center;
 }
 
-.half-item-to-right {
+/* .half-item-to-right {
   justify-content: flex-end;
 }
 
@@ -484,6 +484,57 @@ img {
 
 .mini-input {
   width: 114px;
+} */
+.half-item-to-right {
+  justify-content: flex-end;
+}
+
+.half-item-to-right label {
+  margin-right: 28px;
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.number-counter {
+  display: flex;
+}
+
+.number-input {
+  padding: 0;
+  border: 0;
+  background: var(--basic-light-grey);
+  height: 38px;
+  width: 38px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.number-input-button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.number-input-button:hover path,
+.number-input-button:focus path,
+.number-input-button:hover rect,
+.number-input-button:focus rect {
+  fill: var(--basic-black);
+}
+
+.number-input-button:active path,
+.number-input-button:active rect {
+  fill: var(--basic-light-blue);
 }
 
 .find-button {
@@ -620,12 +671,37 @@ img {
   background-image: url(/img/Icons/check-sign.svg);
 }
 
-/* Range filter */
+.search-form-checkbox:disabled + label::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  left: 0;
+  top: -1px;
+  background-image: url(/img/Icons/checkbox-disable-shape.svg);
+}
 
-/* .range-filter {
-  outline: 5px solid rgba(0, 247, 255, 0.856);
-  outline-offset: -5px;
-} */
+.search-form-checkbox:checked:disabled + label::before {
+  content: "";
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  left: 0;
+  top: -1px;
+  background-image: url(/img/Icons/checkbox-checked-disable-shape.svg);
+}
+
+.search-form-checkbox:checked:disabled + label::after {
+  content: "";
+  position: absolute;
+  height: 17px;
+  width: 22px;
+  left: 4px;
+  top: 0px;
+  background-image: url(/img/Icons/check-sign-disabled.svg);
+}
+
+/* Range filter */
 
 .price-controls {
   width: 313px;
