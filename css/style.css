@@ -589,7 +589,7 @@ img {
   margin: 0;
   padding: 0;
 }
-/* Не получается изменить цвет placeholder'a */
+
 .appointment-input {
   font-family: inherit;
   font-size: inherit;
@@ -609,7 +609,6 @@ img {
   background-color: var(--special-dark-blue);
 }
 
-/* Не получается изменить цвет обводки при наведении */
 .appointment-input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-mid-blue);
@@ -655,17 +654,6 @@ img {
           align-items: center;
 }
 
-/* .half-item-to-right {
-  justify-content: flex-end;
-}
-
-.half-item-to-right label {
-  margin-right: 28px;
-}
-
-.mini-input {
-  width: 114px;
-} */
 .half-item-to-right {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
@@ -1360,6 +1348,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .item-results-stars {
   display: inline-block;
+  vertical-align: middle;
   height: 17px;
   margin-top: 29px;
   margin-right: -1px;
