@@ -605,7 +605,7 @@ img {
   background-color: var(--basic-light-grey);
   width: 346px;
   height: 38px;
-  text-indent: 10px;
+  padding-left: 12px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
@@ -639,6 +639,7 @@ img {
 .appointment-input:focus {
   background-color: var(--basic-white);
   border: 2px solid var(--special-mid-blue);
+  padding-left: 10px;
 }
 
 .calendar-icon {
