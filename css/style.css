@@ -265,7 +265,7 @@ img {
   -ms-grid-rows: -webkit-min-content 256px 256px;
   -ms-grid-rows: min-content 256px 256px;
   grid-template-rows: -webkit-min-content 256px 256px;
-  grid-template-rows: min-content 256px 256px;
+  grid-template-rows: min-content min-content min-content;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -319,6 +319,7 @@ img {
 .image-item {
   grid-column: 1 / -1;
   width: 1200px;
+  min-height: 256px;
   color: var(--basic-white);
   background-color: var(--basic-light-blue);
   margin: 0;
