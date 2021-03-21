@@ -28,6 +28,9 @@
   --special-dark-blue: #ebebeb; /* input hover background */
   --special-mid-blue: #e5e5e5; /* input focus border */
   --special-white: rgba(255, 255, 255, 0.9); /* footer background */
+  --special-extra-grey: rgba(0, 1, 1, 0.2); /* page shadow */
+  --special-shadow-grey: rgba(0, 1, 1, 0.15); /* appointment form shadow */
+  --special-very-light-grey: #ababab;
 }
 
 /* Global */
@@ -44,8 +47,8 @@
   color: var(--basic-extra-dark);
   text-transform: uppercase;
   background-color: var(--basic-white);
-  -webkit-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-          box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+  -webkit-box-shadow: 0px 5px 15px var(--special-extra-grey);
+          box-shadow: 0px 5px 15px var(--special-extra-grey);
 
   min-height: 100%;
   display: -ms-grid;
@@ -544,8 +547,8 @@ img {
   position: absolute;
   top: 100%;
   background-color: var(--basic-white);
-  -webkit-box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
-          box-shadow: 0px 7px 15px rgba(0, 1, 1, 0.15);
+  -webkit-box-shadow: 0px 7px 15px var(--special-shadow-grey);
+          box-shadow: 0px 7px 15px var(--special-shadow-grey);
 
   display: -webkit-box;
 
@@ -606,6 +609,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: none;
+  outline: none;
 }
 
 .appointment-input::-webkit-input-placeholder {
@@ -644,6 +648,7 @@ img {
   margin: 0;
   padding: 0;
   border: none;
+  background-color: transparent;
 }
 
 .calendar-icon:focus path,
@@ -1006,11 +1011,11 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 4px;
   height: 4px;
   padding: 0;
-  background-color: #ababab;
+  background-color: var(--special-very-light-grey);
   border: 8px solid var(--basic-white);
   border-radius: 50%;
-  -webkit-box-shadow: 0 2px 0 0 #ababab;
-          box-shadow: 0 2px 0 0 #ababab;
+  -webkit-box-shadow: 0 2px 0 0 var(--special-very-light-grey);
+          box-shadow: 0 2px 0 0 var(--special-very-light-grey);
   cursor: pointer;
 }
 
