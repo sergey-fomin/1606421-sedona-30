@@ -383,6 +383,9 @@ img {
 
 .features-item h3,
 .tips-item h3 {
+  width: 155px;
+  margin-left: auto;
+  margin-right: auto;
   font-weight: 700;
   font-size: 21px;
   line-height: 21px;
@@ -605,6 +608,26 @@ img {
   border: none;
 }
 
+.appointment-input::-webkit-input-placeholder {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.appointment-input::-moz-placeholder {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.appointment-input:-moz-placeholder {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
+.appointment-input:-ms-input-placeholder {
+  color: var(--basic-black);
+  opacity: 1;
+}
+
 .appointment-input:hover {
   background-color: var(--special-dark-blue);
 }
@@ -689,6 +712,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 38px;
   text-align: center;
   font-size: 14px;
+  font-weight: 700;
 }
 
 .number-input-button {
