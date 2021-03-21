@@ -187,7 +187,7 @@ img {
 
 .welcome {
   height: 509px;
-  background-image: url(../img/Background/background-welcome.jpg);
+  background-image: url(../img/background/background-welcome.jpg);
   background-color: var(--basic-light-blue);
   background-repeat: no-repeat;
   margin: 0;
@@ -219,7 +219,7 @@ img {
 }
 
 .welcome::after {
-  content: url(../img/Background/welcome-bottom-shape.png);
+  content: url(../img/background/welcome-bottom-shape.png);
   height: 57px;
   margin: 0;
   padding: 0;
@@ -748,14 +748,14 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 1200px;
   height: 593px;
   background-color: var(--basic-dark-grey);
-  background-image: url("../img/Content/map.jpg");
+  background-image: url("../img/background/map.jpg");
 }
 
 /* Hotel search parameters */
 
 .hotel-search-section {
   background-color: var(--basic-light-blue);
-  background-image: url(../img/Background/filter-background.jpg);
+  background-image: url(../img/background/filter-background.jpg);
   background-repeat: no-repeat;
   width: 1200px;
   height: 217px;
@@ -860,7 +860,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 23px;
   left: 0;
   top: -1px;
-  background-image: url(../img/Icons/checkbox-shape.svg);
+  background-image: url(../img/icons/checkbox-shape.svg);
 }
 
 .search-form-checkbox:checked + label::before {
@@ -870,7 +870,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 23px;
   left: 0;
   top: -1px;
-  background-image: url(../img/Icons/checkbox-checked-shape.svg);
+  background-image: url(../img/icons/checkbox-checked-shape.svg);
 }
 
 .search-form-checkbox:checked + label::after {
@@ -880,7 +880,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 22px;
   left: 4px;
   top: 0px;
-  background-image: url(../img/Icons/check-sign.svg);
+  background-image: url(../img/icons/check-sign.svg);
 }
 
 .search-form-checkbox:disabled + label::before {
@@ -890,7 +890,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 23px;
   left: 0;
   top: -1px;
-  background-image: url(../img/Icons/checkbox-disable-shape.svg);
+  background-image: url(../img/icons/checkbox-disable-shape.svg);
 }
 
 .search-form-checkbox:checked:disabled + label::before {
@@ -900,7 +900,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 23px;
   left: 0;
   top: -1px;
-  background-image: url(../img/Icons/checkbox-checked-disable-shape.svg);
+  background-image: url(../img/icons/checkbox-checked-disable-shape.svg);
 }
 
 .search-form-checkbox:checked:disabled + label::after {
@@ -910,7 +910,7 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 22px;
   left: 4px;
   top: 0px;
-  background-image: url(../img/Icons/check-sign-disabled.svg);
+  background-image: url(../img/icons/check-sign-disabled.svg);
 }
 
 /* Range filter */
@@ -1356,7 +1356,7 @@ input[type="number"]::-webkit-outer-spin-button {
   height: 17px;
   margin-top: 29px;
   margin-right: -1px;
-  background-image: url("../img/Icons/star-shape.svg");
+  background-image: url("../img/icons/star-shape.svg");
   background-repeat: space;
 }
 
