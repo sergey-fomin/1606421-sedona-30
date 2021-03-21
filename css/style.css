@@ -641,6 +641,9 @@ img {
   position: absolute;
   top: 8px;
   right: 10px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 .calendar-icon:focus path,
