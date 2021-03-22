@@ -31,6 +31,7 @@
   --special-extra-grey: rgba(0, 1, 1, 0.2); /* page shadow */
   --special-shadow-grey: rgba(0, 1, 1, 0.15); /* appointment form shadow */
   --special-very-light-grey: #ababab;
+  --special-dark-white: rgba(255, 255, 255, 0.3); /* active links text */
 }
 
 /* Global */
@@ -511,6 +512,7 @@ img {
 }
 
 .appointment-form-dropdown {
+  color: var(--basic-white);
   background-color: var(--basic-light-brown);
   height: 86px;
   font-size: 21px;
@@ -528,21 +530,14 @@ img {
           align-items: center;
 }
 
-.appointment-form-dropdown a {
-  color: var(--basic-white);
-}
-
 .appointment-form-dropdown:hover,
 .appointment-form-dropdown:focus {
   background-color: var(--basic-mid-brown);
 }
 
 .appointment-form-dropdown:active {
+  color: var(--special-dark-white);
   background-color: var(--basic-dark-brown);
-}
-
-.appointment-form-dropdown:active a {
-  opacity: 0.3;
 }
 
 .appointment-form {
@@ -1287,12 +1282,14 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
-  margin-top: 24px;
   color: var(--basic-black);
 
   grid-area: title;
   margin: 0;
   padding: 0;
+  display: flex;
+  margin-bottom: 7px;
+
 }
 
 .info-hotel-link {
@@ -1313,7 +1310,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: type;
-  margin: 7px 0;
+  margin-top: 0px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
@@ -1321,17 +1319,21 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: coast;
-  margin: 7px 0;
+  margin-top: 0px;
+  margin-bottom: 16px;
   padding: 0;
 }
 
 .more-info-button {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  margin-top: 8px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  color: var(--basic-white);
+  font-weight: 700;
   background-color: var(--basic-light-blue);
-  width: 110px;
-  height: 27px;
+  min-width: 110px;
+  min-height: 27px;
   grid-area: info;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1347,10 +1349,13 @@ input[type="number"]::-webkit-outer-spin-button {
 .booking-button {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
-  margin-top: 8px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  color: var(--basic-white);
+  font-weight: 700;
   background-color: var(--basic-light-brown);
-  width: 142px;
-  height: 27px;
+  min-width: 142px;
+  min-height: 27px;
   grid-area: booking;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1363,23 +1368,14 @@ input[type="number"]::-webkit-outer-spin-button {
           align-items: center;
 }
 
-.more-info-button a,
-.booking-button a {
-  color: var(--basic-white);
-  font-weight: 700;
-}
-
 .more-info-button:hover,
 .more-info-button:focus {
   background-color: var(--basic-mid-blue);
 }
 
 .more-info-button:active {
+  color: var(--special-dark-white);
   background-color: var(--basic-dark-blue);
-}
-
-.more-info-button:active a {
-  opacity: 0.3;
 }
 
 .booking-button:hover,
@@ -1388,11 +1384,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .booking-button:active {
+  color: var(--special-dark-white);
   background-color: var(--basic-dark-brown);
-}
-
-.booking-button:active a {
-  opacity: 0.3;
 }
 
 .item-results-stars {
