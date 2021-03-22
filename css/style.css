@@ -5,6 +5,13 @@
 * Browsers: last 4 version
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 /* Variables */
 
 :root {
@@ -266,6 +273,7 @@ img {
   -ms-grid-rows: -webkit-min-content 256px 256px;
   -ms-grid-rows: min-content 256px 256px;
   grid-template-rows: -webkit-min-content 256px 256px;
+  grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
   grid-template-rows: min-content min-content min-content;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -870,7 +878,9 @@ input[type="number"]::-webkit-outer-spin-button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  align-items: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .checkbox-field label {
@@ -1039,9 +1049,15 @@ input[type="number"]::-webkit-outer-spin-button {
   border-radius: 2px;
   background-color: transparent;
   margin-right: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .coast-search-button:hover {
@@ -1219,6 +1235,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: min-content 29px 1fr 29px min-content;
+  grid-template-columns: -webkit-min-content 29px 1fr 29px -webkit-min-content;
   grid-template-columns: min-content 29px 1fr 29px min-content;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1243,7 +1260,7 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-column: 3 / 4;
   display: -ms-grid;
   display: grid;
-      grid-template-areas:
+          grid-template-areas:
     "title title title"
     "type coast ."
     "info booking .";
@@ -1290,6 +1307,8 @@ input[type="number"]::-webkit-outer-spin-button {
   grid-area: title;
   margin: 0;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 7px;
 
@@ -1331,7 +1350,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
   padding: 0 5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: var(--basic-white);
   font-weight: 700;
   background-color: var(--basic-light-blue);
@@ -1353,7 +1373,8 @@ input[type="number"]::-webkit-outer-spin-button {
   -ms-grid-row: 3;
   -ms-grid-column: 3;
   padding: 0 5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   color: var(--basic-white);
   font-weight: 700;
   background-color: var(--basic-light-brown);
@@ -1428,7 +1449,8 @@ input[type="number"]::-webkit-outer-spin-button {
   min-height: 27px;
   margin-bottom: 30px;
   padding: 0 5px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1524,14 +1546,19 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .footer-phone {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .footer-phone-link {
   color: inherit;
   padding-left: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 180px;
 }
 
